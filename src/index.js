@@ -1,6 +1,6 @@
 import "./style.css";
 import Logo from "./logo.png";
-import { creatHeader } from "./header.js";
+import { createHeader } from "./header.js";
+import { createNav } from "./nav";
 const content = document.querySelector("#content");
-const header = creatHeader(Logo);
-content.appendChild(header);
+content.append(createHeader(Logo), createNav());
