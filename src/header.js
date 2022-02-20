@@ -1,4 +1,4 @@
-const creatHeader = (image) => {
+const createHeader = (image) => {
   const header = document.createElement("header");
   const heading = document.createElement("h1");
   const logo = new Image();
@@ -9,4 +9,4 @@ const creatHeader = (image) => {
   header.appendChild(heading);
   return header;
 };
-export { creatHeader };
+export { createHeader };
