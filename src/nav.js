@@ -8,7 +8,7 @@ const createNav = () => {
   const menuBtn = document.createElement("button");
   const contactBtn = document.createElement("button");
   homeBtn.textContent = "Home";
-  menuBtn.textContent = "Manu";
+  menuBtn.textContent = "Menu";
   contactBtn.textContent = "Contact";
   homeBtn.classList.add("navBtn");
   menuBtn.classList.add("navBtn");
