@@ -1,11 +1,11 @@
-const createFirstPara = () => {
+const createHome = () => {
+  const home = document.createElement("div");
+  home.classList.add("mainContent", "home");
   const firstPara = document.createElement("p");
   firstPara.textContent = "Don't look further, your favorite pizza is here!";
-  return firstPara;
-};
-const createSecondPara = () => {
   const secondPara = document.createElement("p");
   secondPara.textContent = "Call us or order online.";
-  return secondPara;
+  home.append(firstPara, secondPara);
+  return home;
 };
-export { createFirstPara, createSecondPara };
+export { createHome };
