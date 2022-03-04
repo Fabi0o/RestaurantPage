@@ -10,9 +10,9 @@ const createNav = () => {
   homeBtn.textContent = "Home";
   menuBtn.textContent = "Menu";
   contactBtn.textContent = "Contact";
-  homeBtn.classList.add("navBtn");
-  menuBtn.classList.add("navBtn");
-  contactBtn.classList.add("navBtn");
+  homeBtn.classList.add("navBtn", "homeBtn");
+  menuBtn.classList.add("navBtn", "menuBtn");
+  contactBtn.classList.add("navBtn", "contactBtn");
   item1.appendChild(homeBtn);
   item2.appendChild(menuBtn);
   item3.appendChild(contactBtn);
