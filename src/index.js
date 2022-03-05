@@ -4,6 +4,7 @@ import { createHeader } from "./header.js";
 import { createNav } from "./nav";
 import { createHome } from "./home";
 import { createMenu } from "./menu";
+import { createContact } from "./contact";
 const content = document.querySelector("#content");
 content.append(createHeader(Logo), createNav(), createHome());
 
@@ -24,5 +25,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 contactBtn.addEventListener("click", () => {
-  alert("WIP");
+  const mainContent = document.querySelector(".mainContent");
+  mainContent.remove();
+  content.append(createContact());
 });
